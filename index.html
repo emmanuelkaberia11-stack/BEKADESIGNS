@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beka Designers - Portfolio & Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --primary:#0a0a23;
+      --accent:#007bff;
+      --muted:#6b6b6b;
+      --bg:#f5f5f5;
+      --card:#ffffff;
+      --success:#16a34a;
+      --danger:#ef4444;
+    }
+    body.dark-mode{
+      --bg:#0f1724;
+      --card:#111827;
+      --muted:#9ca3af;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:"Poppins",sans-serif;
+      margin:0;background:var(--bg);color:#111;
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background:var(--primary);color:#fff;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;
+      position:sticky;top:0;z-index:100;
+    }
+    header h2{font-size:1.1rem;letter-spacing:1px}
+    nav a{color:#cfe8ff;margin:0 10px;text-decoration:none;font-weight:500}
+    .toggle-btn{background:#fff;color:#000;padding:6px 10px;border-radius:8px;cursor:pointer}
+    .container{max-width:1100px;margin:0 auto;padding:40px 20px}
+    .hero{text-align:center;padding:56px 0}
+    .hero h1{font-size:2.4rem;margin-bottom:8px}
+    .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06);transition:transform .18s}
+    .card:hover{transform:translateY(-6px)}
+    .services .card h3{margin-bottom:8px}
+    .gallery img{width:100%;border-radius:8px;display:block}
+    .section-title{margin-bottom:18px;font-size:1.2rem}
+    select,input,textarea,button{font-family:inherit}
+    form input, form textarea, form select {
+      width:100%;padding:12px;border-radius:8px;border:1px solid #ddd;margin-bottom:12px;
+      background:transparent;
+    }
+    .muted{color:var(--muted);font-size:0.95rem}
+    footer{background:var(--primary);color:#fff;padding:18px;text-align:center;margin-top:36px}
+    .row{display:flex;gap:16px;flex-wrap:wrap}
+    .col{flex:1;min-width:200px}
+    .small{font-size:0.9rem}
+    .status{margin-top:8px;font-weight:600}
+    /* PayPal button spacing */
+    #paypal-button-container{margin-top:16px}
+    /* success box */
+    .success-box{display:flex;align-items:center;gap:12px;background:#e6ffef;border:1px solid #c6f6d5;padding:12px;border-radius:8px;color:var(--success);margin-top:12px}
+    /* note box */
+    .note-box{background:#fff3cd;border:1px solid #ffeeba;color:#856404;text-align:center;font-weight:500;padding:12px;border-radius:8px;margin-top:12px;grid-column:1/-1}
+    @media (max-width:700px){ .hero h1{font-size:1.6rem} header{padding:12px} }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>BEKA DESIGNS and IT Services</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#hire">Hire Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="toggle-btn" onclick="toggleTheme()">Dark</div>
+  </header>
+
+  <main>
+    <section id="home" class="container hero">
+      <h1>Professional Graphic & IT Services</h1>
+      <p class="muted">Design, installation, repair and activation services — secure, fast and affordable.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container services">
+      <div class="section-title"><strong>My Services</strong></div>
+      <div class="grid">
+        <div class="card">
+          <h3>Logo Design</h3>
+          <p class="muted">Clean, modern & memorable brand logos.</p>
+        </div>
+
+        <div class="card">
+          <h3>Poster Design</h3>
+          <p class="muted">High-quality promotional and marketing posters.</p>
+        </div>
+
+        <div class="card">
+          <h3>Brand Identity</h3>
+          <p class="muted">Brand kits, business cards & corporate packages.</p>
+        </div>
+
+        <div class="card">
+          <h3>Photo Editing</h3>
+          <p class="muted">High-end retouching & image enhancement.</p>
+        </div>
+
+        <!-- NEW: Computer Services -->
+        <div class="card">
+          <h3>Windows Software Installation</h3>
+          <p class="muted">Install drivers & software packages, app setup.</p>
+        </div>
+
+        <div class="card">
+          <h3>System Repair & Troubleshooting</h3>
+          <p class="muted">Diagnose and fix OS/software issues, performance tuning.</p>
+        </div>
+
+        <div class="card">
+          <h3>Microsoft Office Installation</h3>
+          <p class="muted">Install & configure MS Office suites.</p>
+        </div>
+
+        <div class="card">
+          <h3>Windows Installation</h3>
+          <p class="muted">Full Windows OS installation and setup.</p>
+        </div>
+
+        <div class="card">
+          <h3>Windows Activation</h3>
+          <p class="muted">Genuine activation & license setup.</p>
+        </div>
+
+        <div class="card">
+          <h3>MS Office Activation</h3>
+          <p class="muted">Office activation and license configuration.</p>
+        </div>
+
+        <div class="card">
+          <h3>Adobe Photoshop Installation</h3>
+          <p class="muted">Install Photoshop; configure for best performance.</p>
+        </div>
+
+        <div class="card">
+          <h3>Adobe Illustrator Installation</h3>
+          <p class="muted">Install Illustrator and setup preferences.</p>
+        </div>
+
+        <!-- NOTE: Software services require Nairobi attendance -->
+        <div class="note-box">
+          Note: Software installation & repair services are <strong>only available in Nairobi, Kenya</strong> and require physical attendance by our mobile personnel. Call <strong>0768718048</strong> to check available technicians.
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire Me (includes PayPal + contact form) -->
+    <section id="hire" class="container" style="margin-top:28px">
+      <div class="row">
+        <!-- Left: Pricing & PayPal -->
+        <div class="col card" style="min-width:320px;">
+          <h3>Hire & Pay Online</h3>
+          <p class="muted">Choose service, select price, and pay securely with PayPal.</p>
+
+          <label class="small">Service</label>
+          <select id="serviceSelect">
+            <option value="Logo Design">Logo Design — $15</option>
+            <option value="Poster Design">Poster Design — $15</option>
+            <option value="Brand Identity">Brand Identity — $15</option>
+            <option value="Photo Editing">Photo Editing — $12</option>
+
+            <!-- Computer services with chosen prices (editable in script priceMap) -->
+            <option value="Windows Software Installation">Windows Software Installation — $12</option>
+            <option value="System Repair & Troubleshooting">System Repair & Troubleshooting — $15</option>
+            <option value="Microsoft Office Installation">Microsoft Office Installation — $12</option>
+            <option value="Windows Installation">Windows Installation — $15</option>
+            <option value="Windows Activation">Windows Activation — $10</option>
+            <option value="MS Office Activation">MS Office Activation — $10</option>
+            <option value="Adobe Photoshop Installation">Adobe Photoshop Installation — $60</option>
+            <option value="Adobe Illustrator Installation">Adobe Illustrator Installation — $70</option>
+          </select>
+
+          <label class="small" style="margin-top:10px">Price (auto)</label>
+          <input id="selectedPrice" readonly />
+
+          <div id="paypal-button-container"></div>
+
+          <p class="muted small" style="margin-top:10px">Note: Prices shown are default web prices; final quotes may change if extra work is required.</p>
+        </div>
+
+        <!-- Right: Contact/Hire Form -->
+        <div class="col card">
+          <h3>Contact / Hire Form</h3>
+          <p class="muted">Choose a service below, attach any supporting files (screenshots, briefs, logos), and send your request.</p>
+
+          <form id="contact-form">
+            <label class="small">Your Name</label>
+            <input type="text" name="from_name" placeholder="Full name" required />
+
+            <label class="small">Your Email</label>
+            <input type="email" name="from_email" placeholder="you@example.com" required />
+
+            <label class="small">Service</label>
+            <select name="service" id="contactService">
+              <option>Logo Design</option>
+              <option>Poster Design</option>
+              <option>Brand Identity</option>
+              <option>Photo Editing</option>
+
+              <option>Windows Software Installation</option>
+              <option>System Repair & Troubleshooting</option>
+              <option>Microsoft Office Installation</option>
+              <option>Windows Installation</option>
+              <option>Windows Activation</option>
+              <option>MS Office Activation</option>
+              <option>Adobe Photoshop Installation</option>
+              <option>Adobe Illustrator Installation</option>
+            </select>
+
+            <label class="small">Message</label>
+            <textarea name="message" rows="5" placeholder="Describe what you need..." required></textarea>
+
+            <label class="small">Attach files (optional, up to ~2MB each)</label>
+            <input type="file" name="my_file1" />
+            <input type="file" name="my_file2" />
+            <input type="file" name="my_file3" />
+
+            <button type="submit">Send Request</button>
+            <p id="status" class="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="container" style="margin-top:28px">
+      <div class="section-title">Portfolio Gallery</div>
+      <div class="grid gallery">
+        <!-- replace src with your own images -->
+        <img src="win11.jpg" alt="work 1" />
+        <img src="win10.jpg" alt="work 2" />
+        <img src="win7.png" alt="work 3" />
+        <img src="ms office.png" alt="work 4" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container small">© 2025 Beka Designs & IT. All rights reserved.</div>
+  </footer>
+
+  <!-- Utilities -->
+  <script>
+    function toggleTheme(){ document.body.classList.toggle('dark-mode'); }
+  </script>
+
+  <!-- ===== PAYPAL (dynamic load) ===== -->
+  <script>
+    const PAYPAL_CLIENT_ID = 'AaoHT4hQEQDHkpxEKg5elq2ve1i7TkEinaN5me-u34jHI2uiUyJJLk7zcBzZBBa7rjDP444TcHhkLn13';
+    const priceMap = {
+      "Logo Design": 15,
+      "Poster Design": 15,
+      "Brand Identity": 15,
+      "Photo Editing": 12,
+      "Windows Software Installation": 12,
+      "System Repair & Troubleshooting": 15,
+      "Microsoft Office Installation": 12,
+      "Windows Installation": 15,
+      "Windows Activation": 10,
+      "MS Office Activation": 10,
+      "Adobe Photoshop Installation": 60,
+      "Adobe Illustrator Installation": 70
+    };
+    const serviceSelect = document.getElementById('serviceSelect');
+    const priceInput = document.getElementById('selectedPrice');
+    function updatePriceUI(){ const svc = serviceSelect.value; priceInput.value = `$${priceMap[svc] || 10}`; }
+    serviceSelect.addEventListener('change', updatePriceUI); updatePriceUI();
+    (function loadPayPal(){
+      const s=document.createElement('script'); s.src=`https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=USD`; s.onload=renderPayPalButtons; document.head.appendChild(s);
+    })();
+    function renderPayPalButtons(){
+      function createButtons(){
+        const svc = serviceSelect.value;
+        const amount = priceMap[svc]?String(priceMap[svc]):'10';
+        document.getElementById('paypal-button-container').innerHTML='';
+        if(!window.paypal){ console.error('PayPal SDK failed to load.'); return; }
+        paypal.Buttons({
+          style:{layout:'vertical', color:'blue', shape:'rect', label:'paypal'},
+          createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:amount},description:svc}]});},
+          onApprove:function(data,actions){return actions.order.capture().then(function(details){
+            document.getElementById('paypal-button-container').innerHTML=`<div class="success-box">✅ Payment completed by <strong>${details.payer.name.given_name}</strong>. Thank you!</div>`;
+          });},
+          onError:function(err){console.error(err); document.getElementById('paypal-button-container').innerText='Payment error. Check console.';}
+        }).render('#paypal-button-container');
+      }
+      createButtons();
+      serviceSelect.addEventListener('change', createButtons);
+    }
+  </script>
+
+  <!-- ===== EMAILJS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    const EMAILJS_PUBLIC_KEY='9csTJLGX8TfmNwX_T';
+    const EMAILJS_SERVICE_ID='service_7t7seqq';
+    const EMAILJS_TEMPLATE_ID='template_02knnwi';
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+    document.getElementById('contact-form').addEventListener('submit',function(e){
+      e.preventDefault();
+      const status=document.getElementById('status');
+      status.style.color='#333'; status.innerText='Sending...';
+      emailjs.sendForm(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,this)
+        .then(function(){
+          status.style.color='green'; status.innerText='Message sent successfully! We will contact you soon.';
+          document.getElementById('contact-form').reset();
+        },function(err){console.error('EmailJS error:',err); status.style.color='red'; status.innerText='Failed to send message. Please try again or contact via email.';});
+    });
+    document.getElementById('serviceSelect').addEventListener('change',function(){
+      const s=this.value;
+      const contactService=document.getElementById('contactService');
+      if(contactService) contactService.value=s;
+    });
+  </script>
+</body>
+</html>
