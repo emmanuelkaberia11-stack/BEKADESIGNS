@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Search Console -->
-  <meta name="google-site-verification" content="momhEZl1rx1iaThS4JdccA0DAfObtmjirevPMvmCFcQ">
-  <title>Beka Designs</title>
-</head>
-<body>
-  <!-- Your website content -->
-</body>
-</html>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Beka Designers - Portfolio & Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,74 +90,61 @@
           <h3>Logo Design</h3>
           <p class="muted">Clean, modern & memorable brand logos.</p>
         </div>
-
         <div class="card">
           <h3>Poster Design</h3>
           <p class="muted">High-quality promotional and marketing posters.</p>
         </div>
-
         <div class="card">
           <h3>Brand Identity</h3>
           <p class="muted">Brand kits, business cards & corporate packages.</p>
         </div>
-
         <div class="card">
           <h3>Photo Editing</h3>
           <p class="muted">High-end retouching & image enhancement.</p>
         </div>
-
-        <!-- NEW: Computer Services -->
+        <!-- Computer services -->
         <div class="card">
           <h3>Windows Software Installation</h3>
           <p class="muted">Install drivers & software packages, app setup.</p>
         </div>
-
         <div class="card">
           <h3>System Repair & Troubleshooting</h3>
           <p class="muted">Diagnose and fix OS/software issues, performance tuning.</p>
         </div>
-
         <div class="card">
           <h3>Microsoft Office Installation</h3>
           <p class="muted">Install & configure MS Office suites.</p>
         </div>
-
         <div class="card">
           <h3>Windows Installation</h3>
           <p class="muted">Full Windows OS installation and setup.</p>
         </div>
-
         <div class="card">
           <h3>Windows Activation</h3>
           <p class="muted">Genuine activation & license setup.</p>
         </div>
-
         <div class="card">
           <h3>MS Office Activation</h3>
           <p class="muted">Office activation and license configuration.</p>
         </div>
-
         <div class="card">
           <h3>Adobe Photoshop Installation</h3>
           <p class="muted">Install Photoshop; configure for best performance.</p>
         </div>
-
         <div class="card">
           <h3>Adobe Illustrator Installation</h3>
           <p class="muted">Install Illustrator and setup preferences.</p>
         </div>
-
-        <!-- NOTE: Software services require Nairobi attendance -->
         <div class="note-box">
-          Note: Software installation & repair services are <strong>only available in Nairobi, Kenya</strong> and require physical attendance by our mobile personnel. Call <strong>0768718048</strong> to check available technicians.
+          Note: Software installation & repair services are <strong>only available in Nairobi, Kenya</strong> and require physical attendance. Call <strong>0768718048</strong>.
         </div>
       </div>
     </section>
 
-    <!-- Hire Me (includes PayPal + contact form) -->
+    <!-- Hire Me -->
     <section id="hire" class="container" style="margin-top:28px">
       <div class="row">
-        <!-- Left: Pricing & PayPal -->
+        <!-- Left: PayPal -->
         <div class="col card" style="min-width:320px;">
           <h3>Hire & Pay Online</h3>
           <p class="muted">Choose service, select price, and pay securely with PayPal.</p>
@@ -175,8 +155,6 @@
             <option value="Poster Design">Poster Design — $15</option>
             <option value="Brand Identity">Brand Identity — $15</option>
             <option value="Photo Editing">Photo Editing — $12</option>
-
-            <!-- Computer services with chosen prices (editable in script priceMap) -->
             <option value="Windows Software Installation">Windows Software Installation — $12</option>
             <option value="System Repair & Troubleshooting">System Repair & Troubleshooting — $15</option>
             <option value="Microsoft Office Installation">Microsoft Office Installation — $12</option>
@@ -191,21 +169,20 @@
           <input id="selectedPrice" readonly />
 
           <div id="paypal-button-container"></div>
-
           <p class="muted small" style="margin-top:10px">Note: Prices shown are default web prices; final quotes may change if extra work is required.</p>
         </div>
 
-        <!-- Right: Contact/Hire Form -->
+        <!-- Right: Contact Form -->
         <div class="col card">
           <h3>Contact / Hire Form</h3>
-          <p class="muted">Choose a service below, attach any supporting files (screenshots, briefs, logos), and send your request.</p>
+          <p class="muted">Attach supporting files and send your request.</p>
 
           <form id="contact-form">
             <label class="small">Your Name</label>
-            <input type="text" name="from_name" placeholder="Full name" required />
+            <input type="text" name="user_name" placeholder="Full name" required />
 
             <label class="small">Your Email</label>
-            <input type="email" name="from_email" placeholder="you@example.com" required />
+            <input type="email" name="user_email" placeholder="you@example.com" required />
 
             <label class="small">Service</label>
             <select name="service" id="contactService">
@@ -213,7 +190,6 @@
               <option>Poster Design</option>
               <option>Brand Identity</option>
               <option>Photo Editing</option>
-
               <option>Windows Software Installation</option>
               <option>System Repair & Troubleshooting</option>
               <option>Microsoft Office Installation</option>
@@ -227,7 +203,7 @@
             <label class="small">Message</label>
             <textarea name="message" rows="5" placeholder="Describe what you need..." required></textarea>
 
-            <label class="small">Attach files (optional, up to ~2MB each)</label>
+            <label class="small">Attach files (optional)</label>
             <input type="file" name="my_file1" />
             <input type="file" name="my_file2" />
             <input type="file" name="my_file3" />
@@ -243,7 +219,7 @@
     <section id="portfolio" class="container" style="margin-top:28px">
       <div class="section-title">Portfolio Gallery</div>
       <div class="grid gallery">
-        <!-- replace src with your own images -->
+        <img src="kabe icon.jpg" alt="IT TECHNICIAN"/>
         <img src="win11.jpg" alt="work 1" />
         <img src="win10.jpg" alt="work 2" />
         <img src="win7.png" alt="work 3" />
@@ -256,31 +232,23 @@
     <div class="container small">© 2025 Beka Designs & IT. All rights reserved.</div>
   </footer>
 
-  <!-- Utilities -->
+  <!-- ===== Utilities ===== -->
   <script>
     function toggleTheme(){ document.body.classList.toggle('dark-mode'); }
   </script>
 
-  <!-- ===== PAYPAL (dynamic load) ===== -->
+  <!-- ===== PAYPAL ===== -->
   <script>
     const PAYPAL_CLIENT_ID = 'AaoHT4hQEQDHkpxEKg5elq2ve1i7TkEinaN5me-u34jHI2uiUyJJLk7zcBzZBBa7rjDP444TcHhkLn13';
     const priceMap = {
-      "Logo Design": 15,
-      "Poster Design": 15,
-      "Brand Identity": 15,
-      "Photo Editing": 12,
-      "Windows Software Installation": 12,
-      "System Repair & Troubleshooting": 15,
-      "Microsoft Office Installation": 12,
-      "Windows Installation": 15,
-      "Windows Activation": 10,
-      "MS Office Activation": 10,
-      "Adobe Photoshop Installation": 60,
-      "Adobe Illustrator Installation": 70
+      "Logo Design": 15,"Poster Design": 15,"Brand Identity": 15,"Photo Editing": 12,
+      "Windows Software Installation": 12,"System Repair & Troubleshooting": 15,"Microsoft Office Installation": 12,
+      "Windows Installation": 15,"Windows Activation": 10,"MS Office Activation": 10,
+      "Adobe Photoshop Installation": 60,"Adobe Illustrator Installation": 70
     };
     const serviceSelect = document.getElementById('serviceSelect');
     const priceInput = document.getElementById('selectedPrice');
-    function updatePriceUI(){ const svc = serviceSelect.value; priceInput.value = `$${priceMap[svc] || 10}`; }
+    function updatePriceUI(){ priceInput.value = `$${priceMap[serviceSelect.value] || 10}`; }
     serviceSelect.addEventListener('change', updatePriceUI); updatePriceUI();
     (function loadPayPal(){
       const s=document.createElement('script'); s.src=`https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=USD`; s.onload=renderPayPalButtons; document.head.appendChild(s);
@@ -293,11 +261,11 @@
         if(!window.paypal){ console.error('PayPal SDK failed to load.'); return; }
         paypal.Buttons({
           style:{layout:'vertical', color:'blue', shape:'rect', label:'paypal'},
-          createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:amount},description:svc}]});},
-          onApprove:function(data,actions){return actions.order.capture().then(function(details){
+          createOrder:(data,actions)=>actions.order.create({purchase_units:[{amount:{value:amount},description:svc}]}),
+          onApprove:(data,actions)=>actions.order.capture().then(details=>{
             document.getElementById('paypal-button-container').innerHTML=`<div class="success-box">✅ Payment completed by <strong>${details.payer.name.given_name}</strong>. Thank you!</div>`;
-          });},
-          onError:function(err){console.error(err); document.getElementById('paypal-button-container').innerText='Payment error. Check console.';}
+          }),
+          onError:(err)=>{console.error(err); document.getElementById('paypal-button-container').innerText='Payment error.';}
         }).render('#paypal-button-container');
       }
       createButtons();
@@ -312,6 +280,7 @@
     const EMAILJS_SERVICE_ID='service_7t7seqq';
     const EMAILJS_TEMPLATE_ID='template_02knnwi';
     emailjs.init(EMAILJS_PUBLIC_KEY);
+
     document.getElementById('contact-form').addEventListener('submit',function(e){
       e.preventDefault();
       const status=document.getElementById('status');
@@ -319,9 +288,14 @@
       emailjs.sendForm(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,this)
         .then(function(){
           status.style.color='green'; status.innerText='Message sent successfully! We will contact you soon.';
-          document.getElementById('contact-form').reset();
-        },function(err){console.error('EmailJS error:',err); status.style.color='red'; status.innerText='Failed to send message. Please try again or contact via email.';});
+          this.reset();
+        }.bind(this))
+        .catch(function(err){
+          console.error('EmailJS error:',err);
+          status.style.color='red'; status.innerText='Failed to send message. Please try again or contact via email.';
+        });
     });
+
     document.getElementById('serviceSelect').addEventListener('change',function(){
       const s=this.value;
       const contactService=document.getElementById('contactService');
@@ -330,3 +304,5 @@
   </script>
 </body>
 </html>
+
+
